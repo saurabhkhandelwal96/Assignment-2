@@ -1,0 +1,131 @@
+body{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+/*header start */
+header > ul{
+    background-color: #333333;
+    height: 40px;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+#currency{
+    margin: 1% 20% 1% 0%;
+}
+
+#cartButton{
+    color: white;
+    background-color: #00c8c8;
+    height: 40px;
+    margin: 0;
+    padding: 10px;
+}
+
+header > ul > li > i{
+    padding-right: 10px;
+}
+header > ul > li > a{
+    color: #858585;
+    margin: 1% 5% 1%;
+    float: left;
+    text-decoration: none;
+}
+
+/* container start*/ 
+.container{
+    position: relative;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    height: 20px;
+    width: 100%;
+}
+
+.container > ul{
+    list-style-type: none;
+    z-index: 2;
+    position: relative;
+}
+.container li a{
+    text-decoration: none;
+}
+
+.container > ul > label{
+    display: none;
+}
+.menu{
+    display: flex;
+    right: 5%;
+    margin-right: 100px;
+    position: absolute;
+    z-index: 2;
+}
+.menu > li > a{
+    color: black;
+    font-size: 12px;
+    margin: 18px;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu > li > button{
+    position: relative;
+    border: 0;
+    background: transparent;
+    left: 150px;
+    top: -2px;
+}
+#logo{
+    display: flex;
+    font-size: 16px;
+    float: left;
+    text-align: left;
+    text-decoration: none;
+    color: #333333;
+}
+
+span{
+    font-weight: bold;
+}
+#toggle{
+    display: none;
+}
+/*Banner start*/
+.banner{
+    position: relative;
+}
+.banner img{
+    height: auto;
+    width: 100%;
+    opacity: 0.8;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 10px;
+}
+
+.infoContainer{
+    margin: 20px 20% 10px 20%;
+    width: 100%;
+    height: auto;
+}
+.infoContainer img{
+    display: block;
+    float: left;
+    height: 300px;
+    width: auto;
+}
+.containerOne p{
+    margin-right: 30%;
+    text-align: justify;
+}

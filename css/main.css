@@ -1,0 +1,613 @@
+body{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+/*header start */
+header > ul{
+    background-color: #333333;
+    height: 40px;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+#currency{
+    margin: 10px 200px 10px 200px;
+}
+
+#cartButton{
+    color: white;
+    background-color: #00c8c8;
+    height: 40px;
+    margin: 0;
+    padding: 10px;
+}
+
+header > ul > li > i{
+    padding-right: 10px;
+}
+header > ul > li > a{
+    color: #858585;
+    margin: 10px 50px 10px;
+    float: left;
+    text-decoration: none;
+}
+
+/* container start*/ 
+.container{
+    position: relative;
+    align-items: center;
+    float: left;
+    margin-bottom: 30px;
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+/*.container > img{
+    height: 500px;
+    width: 300px;
+    margin-left: 40px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}*/
+.container > ul{
+    list-style-type: none;
+    z-index: 2;
+    position: relative;
+}
+
+.container > p{
+    color: #575153;
+    font-size: 250px;
+    font-weight: 900;
+    letter-spacing: 200px;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    right: 10%;
+    z-index: 1;
+}
+.container > a > h4{
+    position: absolute;
+    color: #333333;
+    border: 1px solid #333333;
+    padding: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+    z-index: 1;
+    bottom: 10%;
+    right: 30%;
+}
+.container > ul > label{
+    display: none;
+}
+#slider{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+#slider figure{
+    animation: 20s slider infinite;
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0; 
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+.menu{
+    display: flex;
+    right: 5%;
+    margin-right: 100px;
+    position: absolute;
+    z-index: 2;
+}
+.menu > li > a{
+    color: black;
+    font-size: 12px;
+    margin: 18px;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu > li > button{
+    position: relative;
+    border: 0;
+    background: transparent;
+    left: 150px;
+    top: -2px;
+}
+#logo{
+    display: flex;
+    font-size: 16px;
+    float: left;
+    text-align: left;
+    text-decoration: none;
+    color: #333333;
+}
+
+span{
+    font-weight: bold;
+}
+.popular{
+    margin: 0 100px 30px 100px;
+}
+.popular > ul{
+    list-style-type: none;
+    overflow: hidden;
+    padding-inline-start: 0;
+}
+.popular > ul > li >a{
+    color: black;
+    float: left;
+    margin: 10px 30px 10px 0;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*.cardContainer{
+    display: flex;
+    flex-flow: row wrap;
+}
+.smallCard{
+    background-color: #f8f8f8;
+    display: flex;
+    float: left;
+    justify-content: flex-start;
+    margin: 10px;
+    position: relative;
+    height: 350px;
+    width: 300px;
+}
+.smallCard:hover{
+    box-shadow: 1px 3px 4px 2px grey;
+}
+.smallCard img{
+    height: 350px;
+    width: 300px;
+}
+.bigCard{
+    background-color: #f8f8f8;
+    display: flex;
+    float: left;
+    justify-content: flex-start;
+    margin: 10px;
+    position: relative;
+    height: 500px;
+    width: 620px;
+}
+.bigCard:hover{
+    box-shadow: 1px 3px 4px 2px grey;
+}
+.bigCard img{
+    height: 500px;
+    width: 620px;
+}
+*/
+.cardContainer{
+    font-size: 0.85em;
+    column-count: 3;
+}
+.items{
+    display: inline-block;
+    background: #fff;
+    padding: 0.5em;
+    margin: 0 0 1.5em;
+    width: 100%;
+}
+.items > img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.items > img:hover{
+    box-shadow: 1px 3px 4px 2px grey;
+}
+/*Lookbook start*/
+.lookbookContainer{
+    display: flex;
+    margin-bottom: 50px;
+}
+.lookbookCard{
+    background-color: #f8f8f8;
+    display: flex;
+    margin: 10px;
+    height: 400px;
+    width: 500px;
+}
+.lookbookInfo{
+    float: right;
+    text-align: right;
+    margin: 30px;
+}
+
+.lookbookInfo a{
+    background-color: transparent;
+    border: solid 1px black;
+    color: black;
+    font-size: 12px;
+    padding: 10px 20px; 
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.lookbookInfo a:hover {
+    background-color: #00c8c8;
+    color: white;
+    border: none;
+}
+.lookbookImage{
+    bottom: 0;
+    height: 100px;
+    width: 100px;
+}
+.lookbookInfo p{
+    font-size: 12px;
+    margin: 10px 0 30px 0;
+}
+
+/*Footer start*/
+footer{
+    width: 100%;
+    height: auto;
+    background-color:#f8f8f8;
+}
+.footerContainer{
+    margin: 50px 130px 0 130px;
+}
+.section{
+    display: flex;
+    float: left;
+}
+.section > ul{
+    list-style-type: none;
+    margin: 20px 20px 20px 0;
+}
+.section > ul > li{
+    padding-bottom: 15px;
+    font-size: 13px;
+}
+.section > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+.heading{
+    margin: 40px 0 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.winnerLabel{
+    align-items: center;
+    background-color: #333333;
+    display: flex;
+    float: left;
+    color: white;
+    height: 150px;
+    width: 500px;
+    margin: 0 40px 10px 40px;
+}
+.winnerLabel p{
+    margin: auto;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.socialIcons{
+    align-items: center;
+    background-color: #00c8c8;
+    display: flex;
+    color: white;
+    height: 150px;
+    width: 500px;
+}
+.socialIcons > ul{
+    list-style-type: none;
+    margin: auto;
+    padding-left: 0;
+}
+.socialIcons > ul > li > a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 30px;
+}
+.socialIcons > ul > li{
+    float: left;
+}
+.bottom{
+    float: left;
+    background-color: #333333;
+    height: 40px;
+    width: 100%;
+    margin-top: 50px;
+}
+.bottom > ul{
+    list-style-type: none;
+    margin: 0 10px 0 30px;
+}
+.bottom > ul > li{
+    color: #858585;
+    font-size: 16px;
+    margin: 10px 100px 0px;
+    float: left;
+    text-decoration: none;
+}
+#toggle{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    #currency {
+        margin: 10px 100px 10px 100px;
+    }
+    #toggle{
+        float: left;
+    }
+    #toggle:checked ~ .menu {
+        display: block;
+    }
+    .container .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .container > ul > label{
+        display: block;
+        position: relative;
+        right: 5%;
+        float: right;
+    }
+    .menu > ul{
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    ul > li > a{
+    margin: 0 10px 10px 10px;
+    }
+    .container > a > h4 {
+        right: 15%;
+    }
+    .container > img {
+        margin: 0;
+    }
+    header > ul > li > a {
+        margin: 10px 40px 10px;
+    }
+    .list {
+        margin: 0 20px 0 200px;
+    }
+    .list > li > a{
+        margin: 10px;
+    }
+    .container > p {
+        left: 5%
+    }
+    .lookbookContainer{
+        display: block;
+        margin-left: 250px;
+    }
+    .heading{
+        margin: 20px 0 10px 0;
+    }
+    .section > ul{
+        margin: 2px 20px 20px 0;
+    }
+    .winnerLabel{
+        height: auto;
+        width: auto;
+        padding: 50px;
+    }
+    .bottom > ul > li{
+        margin: 10px 110px 0 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    #currency {
+        margin: 10px 50px 10px 0;
+    }
+    .container{
+        height: 300px;
+    }
+    .container > p{
+        letter-spacing: 50px;
+    }
+    .popular > ul > li >a{
+        font-size: small;
+        margin: 10px 18px 10px 0;
+    }
+    .popular{
+        margin-left: 50px;
+    }
+    .lookbookContainer{
+        margin: 0 10% 0;
+    }
+    .footerContainer{
+        margin: 50px 150px 0 50px;
+    }
+    .winnerLabel{
+        padding: 20px;
+        margin: 0 20% 10px;
+    }
+    .socialIcons{
+        width: 100%;
+    }
+    .bottom > ul > li{
+        margin: 10px 14px 0 0;
+    }
+}
+@media only screen and (max-width: 425px){
+    #logo{
+        font-size: 12px;
+    }
+    #currency {
+        margin: 10px 0px 10px 0px;
+    }
+    header > ul{
+        font-size: 12px;
+        padding-left: 20px;
+    }
+    header > ul > li > a {
+        margin: 10px 20px 10px;
+    }
+    .container{
+        height: 170px;
+    }
+    .container > p {
+        font-size: 125px;
+        letter-spacing: 50px;
+    }
+    .container > a > h4{
+        right: 0%;
+        top: 80%;
+        bottom: 7%;
+    }
+    .container > img{
+        margin-left: -135px;
+    }
+    .popular {
+        margin: 0 60px 30px 60px;
+    }
+    .popular > ul > li >a {
+        font-size: x-small;
+        margin: 10px 10px 10px 0;
+    }
+    .lookbookContainer {
+        margin-left: 0px;
+    }
+    .lookbookCard{
+        width: 400px;
+    }
+    .footerContainer{
+        margin: 50px 50px 0 50px;
+    }
+    .bottom{
+        height: 30px;
+        margin-top: 10px;
+    }
+    .bottom > ul{
+        font-size: 10px;
+        padding-left: 20px;
+    }
+    .bottom > ul > li{
+        margin: 10px 8px 0 0;
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width: 375px){
+    header > ul {
+        font-size: 10px;
+        padding-left: 20px;
+        height: 30px;
+    }
+    .container{
+        height: 150px;
+    }
+    .container > img{
+        left: 40%;
+        height: 300px;
+        width: 200px;
+    }
+    .container > p{
+        font-size: 100px;
+        top: 20%;
+    }
+    .container > a > h4{
+        right: 0%;
+        top: 76%;
+        bottom: 3%;
+    }
+    .popular {
+        margin: 0px 40px 30px 40px;
+    }
+    .popular > ul > li >a{
+        font-size: 10px;
+        margin: 10px 10px 10px 0;
+    }
+    .lookbookCard{
+        height: auto;
+        width: 350px;
+    }
+    .lookbookCard > img{
+        padding: 10px 10px 0;
+        height: 290px;
+        width: 150px;
+    }
+    .lookbookInfo{
+        margin: 20px;
+    }
+    .bottom > ul > li{
+        font-size: 7px;
+    }
+}
+@media only screen and (max-width: 320px){
+    header > ul > li > a {
+        margin: 10px 10px 10px;
+    }
+    .container{
+        height: 110px;
+    }
+    .container p{
+        font-size: 90px;
+    }
+    .lookbookCard{
+        width: 315px;
+    }
+    .lookbookInfo {
+        margin: 10px;
+    }
+    .lookbookInfo p {
+        font-size: 10px;
+    }
+    .footerContainer {
+        margin: 50px 50px 0 25px;
+    }
+    .socialIcons > ul > li > a{
+        margin: 15px;
+    }
+    .socialIcons{
+        height: 100px;
+        margin-left: 15px;
+    }
+    .bottom > ul >li {
+        font-size: 6px;
+    }
+}
